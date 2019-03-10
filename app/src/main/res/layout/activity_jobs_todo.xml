@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:activity="in.enzen.taskforum.activities.JobsTodoActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/primaryGrey">
+
+            <TextView
+                android:id="@+id/tvGroupThird"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/jm_com"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="AllCaps" />
+
+                <ImageView
+                    android:id="@+id/ivJM_Notification"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_error_notifications"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_weight="0"
+                    android:visibility="gone"
+                    android:contentDescription="@string/image_name" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvGroupThird"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:fadeScrollbars="true"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tvGroupOneTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryGrey"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/jm_o_38_m"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="AllCaps" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvGroupOne"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:fadeScrollbars="true"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:id="@+id/tvGroupTwoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryGrey"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/jm_mrt"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="AllCaps" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvGroupTwo"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:fadeScrollbars="true"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tvSDO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryGrey"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/sdo_amc"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="AllCaps" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSDO"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:fadeScrollbars="true"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tvGroupAMC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryGrey"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/amc"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="AllCaps" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvAMC"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:fadeScrollbars="true"
+                android:visibility="gone"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

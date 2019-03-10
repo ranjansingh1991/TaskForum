@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    tools:context="in.enzen.taskforum.activities.OnMTreeTrimmingActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llParentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlHeadContainer"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:background="@drawable/app_slide_4"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/glass_background"
+                    android:gravity="end"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvCurrentDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvCurrentTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/time"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/location"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="100dp"
+                    android:contentDescription="@string/image_name"
+                    android:src="@drawable/enzen_logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="148dp"
+                    android:background="@android:color/background_light"
+                    android:gravity="start|center"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/tvScreenTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TREE TREEMMING"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilSelectDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bottom_line_dark"
+                    android:textAllCaps="true"
+                    android:textColorHint="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:id="@+id/tvSelectDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/select_date"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimaryDark" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilSelectTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bottom_line_dark"
+                    android:textAllCaps="true"
+                    android:textColorHint="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:id="@+id/tvSelectTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/select_time"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimaryDark" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Select Type"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbLT"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="LT"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/rbHT"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="HT"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/llLTAttributes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilLtFeederName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etLtFeederName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/feeder_name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilDtrName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etDtrName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/dtr_name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilDtrLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etDtrLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/dtr_location"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilCapacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etCapacity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                            android:hint="@string/capacity"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilPLBTriming"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etPLBTriming"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="PEAK LOAD CURRENT BEFORE TREE TRIMMING"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            tools:ignore="HardcodedText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilR1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etR1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                            android:hint="@string/r"
+                            android:inputType="numberSigned"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilY1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etY1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                            android:hint="@string/y"
+                            android:inputType="numberSigned"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilB1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etB1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                            android:hint="@string/b"
+                            android:inputType="numberSigned"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilN1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etN1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                            android:hint="@string/n"
+                            android:inputType="numberSigned"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilTreeTrimingSpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etTreeTrimingSpan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="TREE TREEMING IN SPAN"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilTreeming"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etTreeming"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="TREEMING"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            tools:ignore="HardcodedText" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilR2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etR2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/r"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilY2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etY2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/y"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilB2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etB2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/b"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilN2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etN2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/n"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilSameLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/etSameLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                            android:hint="PICTURE OF LT LINE BEFORE  AFTER AT SAME LOCATION"
+                            android:inputType="numberSigned"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llHTAttributes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilHtFeederName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etHtFeederName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/feeder_name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilNoOfSpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etNoOfSpan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="NO. OF SPAN"
+                            android:inputType="numberSigned"
+                            android:digits="0123456789"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            tools:ignore="HardcodedText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilLocationFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textAllCaps="true"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etLocationFrom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:hint="LOCATION FROM "
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilLocationTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bottom_line_dark"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/etLocationTo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                            android:hint="@string/location_to"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llPictureParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvImageTitleBefore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Picture of Before"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/imgSnapBefore"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:contentDescription="@string/image_name"
+                            android:src="@drawable/ic_image_add_dark_holo_64" />
+
+                        <TextView
+                            android:id="@+id/tvAttachSnapPathBefore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/select_image"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvImageTitleAfter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Picture of After"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/imgSnapAfter"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:contentDescription="@string/image_name"
+                            android:src="@drawable/ic_image_add_dark_holo_64" />
+
+                        <TextView
+                            android:id="@+id/tvAttachSnapPathAfter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/select_image"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btnReset"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_left"
+                        android:text="@string/reset"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp" />
+                    <View
+                        android:layout_width="2dip"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/background_light" />
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background_right"
+                        android:text="@string/submit"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

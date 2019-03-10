@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    tools:activity=".activities.AssignmentActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <in.enzen.taskforum.sliding.SlidingTabLayout
+        android:id="@+id/stAssignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+    </in.enzen.taskforum.sliding.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpAssignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

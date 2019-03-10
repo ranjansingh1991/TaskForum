@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_Title"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/bottom_line_light"
+        android:gravity="center_vertical"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:text="@string/connection_error"
+        android:textAllCaps="true"
+        android:textColor="@color/colorRedText"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_No_Internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="16dp"
+            android:drawableTop="@drawable/ic_no_internet"
+            android:gravity="center"
+            android:text="@string/no_internet_msg"
+            android:textAllCaps="true"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btn_No_Connection"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background_primary"
+            android:contentDescription="@string/login"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>

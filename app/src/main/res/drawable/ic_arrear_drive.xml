@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="80"
+    android:viewportHeight="80"
+    android:width="100dp"
+    android:height="100dp">
+    <group
+        android:scaleX="0.05"
+        android:scaleY="-0.05"
+        android:translateY="80">
+        <path
+            android:pathData="M894 1559c-351 -88 -200 -229 246 -229 298 0 460 46 460 133 0 80 -497 149 -706 96z"
+            android:fillColor="#f5a04c" />
+        <path
+            android:pathData="M700 1259c0 -113 107 -161 387 -175 332 -16 513 49 513 186l0 66 -103 -39c-197 -75 -560 -68 -723 13 -78 39 -74 42 -74 -51z"
+            android:fillColor="#f5a04c" />
+        <path
+            android:pathData="M703 1069c4 -22 34 -43 75 -54 96 -25 161 -72 174 -127 12 -46 19 -48 197 -48 304 0 451 62 451 190l0 66 -105 -42c-85 -34 -148 -42 -335 -42 -219 1 -261 8 -427 78 -29 13 -36 8 -30 -21z"
+            android:fillColor="#f5a04c" />
+        <path
+            android:pathData="M206 971C-1 921 -44 858 86 793 367 654 1075 765 849 913 728 992 410 1021 206 971Z"
+            android:fillColor="#f5a04c" />
+        <path
+            android:pathData="M1490 813c-76 -30 -152 -40 -315 -41l-215 -2 0 -87 0 -87 225 8c327 13 436 68 412 210 -7 37 -9 37 -107 -1z"
+            android:fillColor="#f5a04c" />
+        <path
+            android:pathData="M869 742C764 641 259 634 34 730 2 744 -2 736 4 668 25 412 900 424 900 680c0 86 -2 90 -31 62z"
+            android:fillColor="#f5a04c" />
+        <path
+            android:pathData="M1540 590c-77 -42 -314 -76 -454 -65l-126 10 0 -87 0 -88 85 -4c367 -17 564 51 551 189 -6 70 -7 71 -56 45z"
+            android:fillColor="#f5a04c" />
+        <path
+            android:pathData="M800 472C634 397 229 406 35 489 -6 507 -15 426 20 360 74 259 508 214 742 285c135 41 163 70 154 160l-6 68 -90 -41z"
+            android:fillColor="#f5a04c" />
+        <path
+            android:pathData="M800 232C627 155 260 164 29 253 3 263 -2 252 4 188 13 70 103 33 403 23 763 12 909 66 896 205l-6 68 -90 -41z"
+            android:fillColor="#f5a04c" />
+    </group>
+</vector>

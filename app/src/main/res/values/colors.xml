@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ENZEN MAIN COLOR NAMES & CODES -->
+    <color name="colorPrimary">#FF9229</color>
+    <color name="colorPrimaryDark">#F07E26</color>
+    <color name="colorAccent">#EA5B0C</color>
+    <color name="tertiaryOrange">#F5A04C</color>
+
+    <!-- ENZEN SPECIFIED COLOR NAMES & COLOR CODES -->
+    <color name="primaryBlue">#4A96D2</color>
+    <color name="secondaryBlue">#3972A9</color>
+    <color name="tertiaryBlue">#A3CCEE</color>
+    <color name="primaryGreen">#439F35</color>
+    <color name="secondaryGreen">#2F7225</color>
+    <color name="tertiaryGreen">#A0C96D</color>
+    <color name="primaryGrey">#C6C6C6</color>
+    <color name="secondaryGrey">#6F6F6F</color>
+    <color name="tertiaryGrey">#DADADA</color>
+
+    <color name="colorBGProgressDialog">#a9f4f8fc</color>
+    <color name="colorHomeHeaderBG">#394e6378</color>
+
+    <color name="header_back">#00BFB1</color>
+    <color name="colorRedText">#fd0c0c</color>
+</resources>

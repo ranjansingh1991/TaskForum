@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context="in.enzen.taskforum.activities.TargetActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCollectionTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/primaryGrey"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/collection_target"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="AllCaps" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCollectionTarget"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:fadeScrollbars="true"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tvDisconnectionTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/primaryGrey"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/disconnection_target"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="AllCaps" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvDisconnectionTarget"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:fadeScrollbars="true"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tvDisconnectionSquad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/primaryGrey"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/disconnection_squad"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp"
+                tools:ignore="AllCaps" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvDisconnectionSquad"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:fadeScrollbars="true"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/llEnforcement"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvEnforcement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/primaryGrey"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:text="Enforcement"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="17sp"
+                        tools:ignore="AllCaps,HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/imgEnforcement"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dip"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_attendence_24px" />
+
+                        <TextView
+                            android:id="@+id/tvEnforcementName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/secondaryGreen"
+                            android:textSize="13sp"
+                            android:layout_gravity="center"
+                            android:text="Enforcement"
+                            tools:ignore="HardcodedText,SmallSp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:id="@+id/llGRF"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvGRF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/primaryGrey"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:text="GRF"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="17sp"
+                        tools:ignore="AllCaps,HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/imgIconGrf"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dip"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_attendence_24px" />
+
+                        <TextView
+                            android:id="@+id/tvGrfName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/secondaryGreen"
+                            android:textSize="14sp"
+                            android:text="GRF"
+                            android:layout_gravity="center"
+                            tools:ignore="HardcodedText,SmallSp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

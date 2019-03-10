@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">Task Forum</string>
+
+    <string name="image_name">Nothing</string>
+    <string name="select_image">Select Image</string>
+    <string name="image_selected">Image Selected</string>
+    <string name="select_your_login_type">Select your login type</string>
+
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="user_id">User Id</string>
+    <string name="logout">Do you really want to logout !!</string>
+
+    <string name="dev_company">Dev company</string>
+    <string name="dev_company_name">semicolon india</string>
+    <string name="powered_by">powered by</string>
+    <string name="powered_by_semicolon_india"><font size="10">Powered by</font> <a herf="http://www.semicolonindia.in">SEMICOLON INDIA PVT LTD</a></string>
+    <string name="please_wait">Please wait…</string>
+    <string name="field_executive">FIELD EXECUTIVE</string>
+    <string name="roger">ROGER</string>
+    <string name="notify_msg_text">You have a new message from</string>
+
+    <!-- Home Navigation drawer items -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- navigation drawer item labels  -->
+    <string name="title_home">Home</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_attendance">Attendance</string>
+    <string name="title_assignment">Assignment</string>
+    <string name="title_report">Report</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_graph">Graph</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_support">Support</string>
+    <!--<string name="title_logout">Logout</string>-->
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_notification">Notification</string>
+    <string name="nav_item_calendar">Calendar</string>
+    <string name="nav_item_attendance">Attendance</string>
+    <string name="nav_item_assignment">Assignment</string>
+    <string name="nav_item_report">Report</string>
+    <string name="nav_item_chat">Chat</string>
+    <string name="nav_item_graph">Graph</string>
+    <string name="nav_item_profile">Profile</string>
+    <string name="nav_item_support">Support</string>
+    <!--<string name="nav_item_logout">Logout</string>-->
+    <string name="todo">TODO</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_notification</item>
+        <item>@string/nav_item_calendar</item>
+        <item>@string/nav_item_attendance</item>
+        <item>@string/nav_item_assignment</item>
+        <item>@string/nav_item_report</item>
+        <item>@string/nav_item_chat</item>
+        <item>@string/nav_item_graph</item>
+        <item>@string/nav_item_profile</item>
+        <item>@string/nav_item_support</item>
+        <!--<item>@string/nav_item_logout</item>-->
+    </string-array>
+
+
+    <string name="previous">Go to previous</string>
+    <string name="next">Go to next</string>
+    <string name="calendar">Calendar</string>
+    <string name="relation">Relation</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="mic">Mic</string>
+    <string name="splashvpimage">SplashVpImage</string>
+    <string name="user_image">User Image</string>
+    <string name="user_name">User Name</string>
+    <string name="change_password">Change Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="empID">Employee ID</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="new_password">New Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="ok">OK</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="location">Location:</string>
+
+    <string-array name="custom_weekdays">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+
+    <string name="no_internet_msg">Please check the internet connection and try again.</string>
+    <string name="hi_roger">Hi User</string>
+    <string name="enzen_global_solutions_pvt_ltd">Enzen Global Solutions Pvt Ltd</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="hello">Hello</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="dev_number">+91 9876543210</string>
+    <string name="support_number">+91 9900851901</string>
+    <string name="support_number_semi">+91 9066865020</string>
+    <string name="contact_email">contact@enzen.com</string>
+    <string name="dev_address">#40, near rose garden\nkelkere, banarghatta road,\nbangalore 560083</string>
+    <string name="support_address">90, Hosur Road, Madiwala, \nBTM Layout 1, Bengaluru, \nKarnataka 560068</string>
+    <string name="facing_any_problem_n_we_are_here_to_help">facing any problem? we are here to help you</string>
+
+    <string name="dummy_text">Notification dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s</string>
+    <string name="send">Send</string>
+    <string name="type_your_message_here">Type your message here</string>
+    <string name="chat">Chat</string>
+    <string name="task">Task</string>
+    <string name="arrow_right">Arrow Right</string>
+    <string name="back">back</string>
+    <string name="toolbar_title">toolbar title</string>
+    <string name="designation">Designation</string>
+    <string name="jm_o_38_m"><![CDATA[JM (O&M)]]></string>
+    <string name="jm_mrt">JM (MRT)</string>
+    <string name="sdo_amc">SDO &#38; AMC</string>
+    <string name="amc">AMC</string>
+    <string name="jm_com">JM (COM)</string>
+    <string name="time">Time</string>
+    <string name="check_meter_reading">CHECK METER READING</string>
+    <string name="select_date">SELECT DATE</string>
+    <string name="select_time">SELECT TIME</string>
+    <string name="no_of_installation_verified">NO. OF INSTALLATION VERIFIED</string>
+    <string name="no_of_installation_reading_found_suppressed">NO. OF INSTALLATION READING FOUND SUPPRESSED</string>
+    <string name="consumer_number">CONSUMER NUMBER</string>
+    <string name="unit_supressed">UNIT SUPRESSED</string>
+    <string name="actual_reading">ACTUAL READING</string>
+    <string name="reading_taken_by_meter_reader">READING TAKEN BY METER READER</string>
+    <string name="no_unauthorised_found">NO UNAUTHORISED FOUND</string>
+    <string name="no_of_penalty_pvr_done">NO OF PENALTY PVR DONE</string>
+    <string name="reset">Reset</string>
+    <string name="_3_ph_meter_reading">3 PH METER READING</string>
+    <string name="no_of_reading_taken">No. Of Reading Taken</string>
+    <string name="no_of_meter_declared_to_be_defective">NO OF METER DECLARED TO BE DEFECTIVE</string>
+    <string name="no_of_unauthorised_found">NO. OF UNAUTHORISED FOUND</string>
+    <string name="dehooking_drives">DEHOOKING DRIVES</string>
+    <string name="picture_of_dehooking">PICTURE OF DEHOOKING</string>
+    <string name="amount_of_spot_penalty_charges_collected">AMOUNT OF SPOT PENALTY CHARGES COLLECTED</string>
+    <string name="no_of_dehooking_done">NO. OF DEHOOKING DONE</string>
+    <string name="feeder_name">FEEDER NAME</string>
+    <string name="installation_verification">INSTALLATION VERIFICATION</string>
+    <string name="new_charging">NEW CHARGING</string>
+    <string name="sin">SIN</string>
+    <string name="no_of_new_connection_charged">NO. OF NEW CONNECTION CHARGED</string>
+    <string name="min">MIN</string>
+    <string name="lin">LIN</string>
+    <string name="safety_meeting">SAFETY MEETING</string>
+    <string name="mrt_meeting">MRT MEETING</string>
+    <string name="picture_during_meeting">PICTURE DURING MEETING</string>
+    <string name="staff_meeting">STAFF MEETING</string>
+    <string name="defective">DEFECTIVE</string>
+    <string name="dtr_name">DTR NAME</string>
+    <string name="dtr_location">DTR LOCATION</string>
+    <string name="capacity">CAPACITY</string>
+    <string name="village_name">VILLAGE NAME</string>
+    <string name="no_of_new_connection_application_received">NO. OF NEW CONNECTION APPLICATION RECEIVED</string>
+    <string name="application_rejected">APPLICATION REJECTED</string>
+    <string name="no_of_power_supply_given">NO. OF POWER SUPPLY GIVEN</string>
+    <string name="received">NO COMMERCIAL COMPLAIN RECEIVED</string>
+    <string name="resolved">NO COMMERCIAL COMPLAIN RESOLVED</string>
+    <string name="mela">MELA</string>
+    <string name="consumer_mella">CONSUMER MELLA</string>
+    <string name="point_discussed">POINT DISCUSSED</string>
+    <string name="no_of_village_commity_created">NO. OF VILLAGE COMMITY CREATED</string>
+    <string name="village_meeting">VILLAGE MEETING</string>
+    <string name="billing_meeting">BILLING MEETING</string>
+    <string name="collection_meeting">COLLECTION MEETING</string>
+    <string name="maintenance_and_safety_meeting_with_ground_staff">MAINTENANCE and SAFETY MEETING WITH GROUND STAFF</string>
+
+    <string name="no_of_bill_revision_complaint_received">NO. OF BILL REVISION COMPLAINT RECEIVED</string>
+    <string name="no_of_bill_revision_done">NO. OF BILL REVISION DONE</string>
+    <string name="no_of_disconnection_notice_served">NO. OF DISCONNECTION NOTICE SERVED</string>
+    <string name="no_of_consumer_visited">NO. OF CONSUMER VISITED</string>
+    <string name="no_of_consumer_paid">NO. OF CONSUMER PAID</string>
+    <string name="arrear_amount">ARREAR AMOUNT</string>
+    <string name="no_of_commitment_done">NO. OF COMMITMENT DONE</string>
+    <string name="commitment_amount">COMMITMENT AMOUNT</string>
+    <string name="no_of_power_supply_disconnected">NO. OF POWER SUPPLY DISCONNECTED</string>
+    <string name="no_of_consumer_found_ld">NO. OF CONSUMER FOUND LD</string>
+    <string name="no_of_ghost_consumer_found">NO. OF GHOST CONSUMER FOUND</string>
+    <string name="general_verification">GENERAL VERIFICATION</string>
+    <string name="for_consumer_grevience">FOR CONSUMER GREVIENCE</string>
+    <string name="no_of_ld_consumer_visited">NO. OF LD CONSUMER VISITED</string>
+    <string name="no_of_ghost_consumer_visited">NO. OF GHOST CONSUMER VISITED</string>
+    <string name="new_connection_verification">NEW CONNECTION VERIFICATION</string>
+    <string name="no_of_existing_recent_new_connection_verified">NO. OF EXISTING/RECENT NEW CONNECTION VERIFIED</string>
+    <string name="no_of_irregularity_found">NO. OF IRREGULARITY FOUND</string>
+    <string name="no_of_irregularity_rectified">NO. OF IRREGULARITY RECTIFIED</string>
+    <string name="no_of_new_premises_verified">NO. OF NEW PREMISES VERIFIED</string>
+    <string name="no_of_new_connection_rejected">NO. OF NEW CONNECTION REJECTED</string>
+    <string name="no_of_tc_verified">NO. OF TC VERIFIED</string>
+    <string name="no_of_unauthorised_tc_found">NO. OF UNAUTHORISED TC FOUND</string>
+    <string name="Rs">\u20B9</string>
+    <string name="semicolon_india_text">We build Websites and Mobile Applications that people look up to, with varying levels of complexities.</string>
+    <string name="we_are_available_at">We are available at</string>
+    <string name="app_contact">contact@semicolonindia.in <a herf="http://www.semicolonindia.in" /></string>
+    <string name="about_us">about us</string>
+    <string name="call">Call</string>
+    <string name="arrear_driver">Arrear Drive</string>
+    <string name="bill_collection">Bill Collection</string>
+    <string name="collection_amount">COLLECTION AMOUNT</string>
+    <string name="no_of_money_receipt">NO. OF MONEY RECEIPT</string>
+    <string name="picture_of_dtr">Picture of Dtr</string>
+    <string name="peak_load_before_sanitising">Peak load before sanitising</string>
+    <string name="r">R</string>
+    <string name="y">Y</string>
+    <string name="b">B</string>
+    <string name="n">N</string>
+    <string name="tree_trimming_in_mtr">Tree trimming in MTR</string>
+    <string name="straining_rejumpering">STRAINING/REJUMPERING</string>
+    <string name="no_of_premises_visited">No. of Premises visited</string>
+    <string name="no_of_meter_shifting_to_outside">No. of meter shifting to outside</string>
+    <string name="no_of_meter_sealed">No. of meter sealed</string>
+    <string name="no_of_unauthorised_pvr_made">No. of Unauthorised PVR made</string>
+    <string name="no_of_case_load_enhanced">No. of case load enhanced</string>
+    <string name="collected">Collected</string>
+    <string name="no_of_meter_declared_defective">No. of meter declared defective</string>
+    <string name="peak_load_current_after_balancing">Peak load current after balancing</string>
+    <string name="collection_target">Collection Target</string>
+    <string name="disconnection_squad">Disconnection Squad</string>
+    <string name="disconnection_target">Disconnection Target</string>
+    <string name="_1_ph_collection_target">1 PH Collection Target</string>
+    <string name="_3_ph_collection_target">3 PH Collection Target</string>
+    <string name="day_s_money_receipt">Day\'s Money Receipt</string>
+    <string name="day_s_arrear">Day\'s Arrear</string>
+    <string name="day_s_collection">Day\'s Collection</string>
+    <string name="_1_ph_disconnection_target">1 PH Disconnection Target</string>
+    <string name="_3_ph_disconnection_target">3 PH Disconnection Target</string>
+    <string name="day_s_disconnection">Day\'s Disconnection</string>
+    <string name="day_s_reconnection">Day\'s Reconnection</string>
+    <string name="day_s_disconnection_realisation">Day\'s Disconnection Realisation</string>
+    <string name="_1_ph_target">1 PH Target</string>
+    <string name="_3_ph_target">3 PH Target</string>
+    <string name="employer">Employer</string>
+    <string name="reporting_manager">Reporting Manager</string>
+    <string name="dt_sanitisation">DT SANITISATION</string>
+    <string name="damage_sickle_insulator">DAMAGE SICKLE INSULATOR</string>
+    <string name="tree_trimming">TREE TRIMMING</string>
+    <string name="damage_pin_insulator">DAMAGE PIN INSULATOR</string>
+    <string name="transformer_earthing">TRANSFORMER EARTHING</string>
+    <string name="damage_ab_cable_mtr">DAMAGE AB CABLE MTR</string>
+    <string name="damage_cond_in_mtr">DAMAGE COND IN MTR</string>
+    <string name="rejumpering">REJUMPERING</string>
+    <string name="pole_erection_rectification">POLE ERECTION/RECTIFICATION</string>
+    <string name="no_of_prov_ass_raised">No. of Prov Assessment raised</string>
+    <string name="asssesment">Asssesment</string>
+    <string name="amt_of_prov_ass">Amt of Prov Assessment</string>
+    <string name="no_of_final_ass_raised">No. of Final Assessment Raised</string>
+    <string name="amt_of_final_assd">Amt of Final Assd</string>
+    <string name="recovery_assessment">Recovery Assessment</string>
+    <string name="ass_amt_recovered">Assessment Amt Recovered</string>
+    <string name="nos_of_cases_recovered">No. of Cases Recovered</string>
+    <string name="energy_reporting">ENERGY REPORTING</string>
+    <string name="no_of_11kv_fdr_audited">No. of 11KV Fdr Audited</string>
+    <string name="nos_of_dtr_audited">Nos. of DTR Audited</string>
+    <string name="picturemeterReading">Picture of Meter Reading</string>
+
+    <string name="total_no">Total No of Unauthorised Consumer</string>
+
+
+    <string name="location_of_pole_replaced_interpose">Location of pole replaced/interpose</string>
+    <string name="pictureOfPoleReplacement">Picture Of Pole Replacement</string>
+
+    <string name="identification_consumer">Identification Consumer</string>
+    <string name="village_commitee">Village Committee</string>
+    <string name="name_of_11kv_feeder">Name of 11KV Feeder</string>
+    <string name="no_of_dtr_covered">No. of DTR Covered</string>
+    <string name="name_of_dtr">Name of DTR</string>
+    <string name="nos_of_spacer_in_said_dtr">Nos. of Spacer in said DTR</string>
+    <string name="line_spacer">LINE SPACER</string>
+    <string name="safety_work">SAFETY WORK</string>
+    <string name="no_of_location">No Of Location</string>
+    <string name="short_details_of_work_done">Short details of work done</string>
+    <string name="no_of_dtr">No. of DTR</string>
+    <string name="dtr_energy_audit">DTR ENERGY AUDIT</string>
+    <string name="dt_fencing">DT Fencing</string>
+    <string name="yes_no">Yes No</string>
+    <string name="daily_input_reading">Daily Input Reading</string>
+    <string name="fatel_non_fetal">Fatel Non Fetal</string>
+    <string name="human_animal">Human Animal</string>
+    <string name="employee_public_human">Employee Public Human</string>
+    <string name="short_details_of_incident">Short Details Of Incident</string>
+    <string name="location_details">Location Details</string>
+    <string name="_11_kv_lt">11 kv/ LT</string>
+    <string name="eletrical_accident">Eletrical Accident</string>
+    <string name="disconnection_1_ph">Disconnection 1 Ph</string>
+    <string name="no_of_dc_dom">No. of DC DOM</string>
+    <string name="amt_of_dc_dom">Amt of DC DOM</string>
+    <string name="no_of_dc_other_than_dom">No. of DC Other than DOM</string>
+    <string name="no_of_rc_dom">No. of RC DOM</string>
+    <string name="no_of_rc_other_than_dom">No. of RC Other than DOM</string>
+    <string name="rc">RC</string>
+    <string name="arrear_collection_against_rc">ARREAR COLLECTION AGAINST RC</string>
+    <string name="amt_recovered_from_rc_dom">Amt Recovered from RC DOM</string>
+    <string name="amt_recovered_from_rc_other_than_dom">Amt Recovered from RC other than DOM</string>
+    <string name="total_collection_for_the_day">Total Collection for the day</string>
+    <string name="no_of_total_mr">No. of Total MR</string>
+    <string name="collection_from_arrear">Collection from Arrear</string>
+    <string name="total_collection_amount">TOTAL COLLECTION AMOUNT</string>
+    <string name="commercial_complain">COMMERCIAL COMPLAIN</string>
+    <string name="amount_recovered_in_rs">Amount Recovered in Rs.</string>
+    <string name="no_of_cases">No. of Cases</string>
+    <string name="bill_revision">BILL REVISION</string>
+    <string name="meter_found_df">METER FOUND DEFECTIVE</string>
+    <string name="nos_of_meter_found_ok_to_df">Nos. of Meter found OK to DF</string>
+    <string name="nos_of_meter_found_df_to_df">Nos. of Meter found DF to DF</string>
+    <string name="nos_of_cases_with_additional_load">Nos. of cases with Additional Load</string>
+    <string name="bypass_identification">BYPASS IDENTIFICATION</string>
+    <string name="nos_of_premise_verified">Nos. of premise verified</string>
+    <string name="nos_of_bypass_cases">Nos. of ByPass cases</string>
+    <string name="bypassed_load_in_kw">ByPassed Load in KW</string>
+    <string name="nos_of_temper_cases">Nos. of Temper cases</string>
+    <string name="bypassidentification">ByPassIdentification</string>
+    <string name="by_pass_picture">By Pass Picture</string>
+    <string name="squad_operation">SQUAD OPERATION</string>
+    <string name="meter_found">METER FOUND</string>
+    <string name="yes">YES</string>
+    <string name="no">No</string>
+    <string name="electric_accident">Electric Accident</string>
+    <string name="location_to">LOCATION TO</string>
+    <string name="nos_of_mr_for_arrear">Nos. of MR for Arrear</string>
+    <string name="preventive_maintaince">PREVENTIVE MAINTAINCE</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <in.enzen.taskforum.calendar.MaterialCalendarView
+        android:id="@+id/mCV_teacher_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/calender_back"
+        android:visibility="visible"
+        app:mcv_arrowColor="@android:color/background_light"
+        app:mcv_headerTextAppearance="@style/CustomDayTextAppearance"
+        app:mcv_showOtherDates="all"
+        app:mcv_weekDayLabels="@array/custom_weekdays"
+        app:mcv_weekDayTextAppearance="@style/DayTextAppearance"/>
+
+    <TextView
+        android:id="@+id/vT_selected_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="17sp"
+        android:visibility="gone" />
+</LinearLayout>
